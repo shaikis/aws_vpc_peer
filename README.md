@@ -55,5 +55,5 @@ module "vpc_peer" {
 - `vpc_peer_auto_accept` - Automatically accept the peering connection between VPCs. VPCs must be in the same account. Default is `false`.
 
 ## Output Variables
-- `peer_vpc_peering_connections_id` - The ID of the VPC Peering Connection
+- `peer_vpc_peering_connection_id` - The ID of the VPC Peering Connection
 
