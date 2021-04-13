@@ -29,10 +29,10 @@ module "vpc_peer" {
   vpc_peer_contact_tag ="shxxxx@xxail.com"
   vpc_peer_peered_account_name ="aws-eht-ismailPersonal"
   vpc_peer_private_subnets = "10.111.220.0/22,10.111.224.0/22,10.111.228.0/22" (or) "data.pub_cidr.value" (to avoid hard coding in modules.)
-  vpc_peer_public_subnets = "10.154.208.0/22,10.154.212.0/22,10.154.216.0/22" (or) "data.pub_cidr.value"
+  vpc_peer_public_subnets = "10.112.208.0/22,10.112.212.0/22,10.112.216.0/22" (or) "data.pub_cidr.value"
   vpc_peer_private_route_tables = "rtb-faf1234a,rtb-faf1234b,rtb-faf1234c" (or) "module.pub_route_tables.id, module.priv_route_tables.id"
   vpc_peer_public_route_tables = "rtb-faf1234d,rtb-faf1234e,rtb-faf1234f"
-  vpc_peer_destination_cidr = "10.154.128.0/19"
+  vpc_peer_destination_cidr = "10.112.128.0/19"
 }
 ```
 ### Required Variables
