@@ -8,6 +8,7 @@ resource "aws_vpc_peering_connection" "vpc_peer_main" {
       Name        = var.vpc_peer_name_tag
       environment = var.vpc_peer_environment_tag
       contact     = var.vpc_peer_contact_tag
+      Product     = var.vpc_peer_product_tag
       role        =  "peering_to_${var.vpc_peer_peered_account_name}_account"
   }
 }

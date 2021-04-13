@@ -11,5 +11,6 @@ variable "vpc_peer_public_subnets" {}
 variable "vpc_peer_destination_cidr" {}
 variable "vpc_peer_private_route_tables" {}
 variable "vpc_peer_public_route_tables" {}
+variable "vpc_peer_product_tag" {}
 
    
