@@ -27,7 +27,7 @@ module "vpc_peer" {
   vpc_peer_name_tag = "shared-services"
   vpc_peer_environment_tag = "live"
   vpc_peer_product_tag = "infrastructure"
-  vpc_peer_contact_tag ="shaik.urs@gmail.com"
+  vpc_peer_contact_tag ="shxxxx@xxail.com"
   vpc_peer_peered_account_name ="aws-eht-ismailPersonal"
   vpc_peer_private_subnets = "10.111.220.0/22,10.111.224.0/22,10.111.228.0/22" (or) "data.pub_cidr.value" (to avoid hard coding in modules.)
   vpc_peer_public_subnets = "10.154.208.0/22,10.154.212.0/22,10.154.216.0/22" (or) "data.pub_cidr.value"
