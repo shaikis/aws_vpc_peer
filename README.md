@@ -1,11 +1,10 @@
 # aws_vpc_peer
-## Overview
 
 A Terraform module to create a VPC peering connection with another VPC. This module only carries out work on one VPC (ie. it does not auto accept the peering creation).
 
 This module will create the appropriate routes and add these to the routing tables of the VPC which will allow the peering connection to work as expected. Therefore this module has a dependancy on the `rap-terraform-vpc` module, as it can use the `aws_route_table.public_route_table` and `aws_route_table.private_route_table` outputs to run without much hassle. The routes will appear as `status = black hole` until the peering connection has been accepted and is active.
 
-Once this module has been applied to a VPC, the module `aws-terraform-vpc-peer-accepter` should be configured on the peered account which represents the `peer_aws_vpc_id` variable. This request will stay open for 7days only, before being expired.
+Once this module has been applied to a VPC, the module `aws-terraform-vpc-peer-accepter` should be configured on the peered account which represents the `peer_aws_vpc_id` variable. This request will stay for 7days.accept it before it expired.
 
 ## Dependencies
  `Vpc module which provides subnets, Routetables,`
